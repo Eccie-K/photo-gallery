@@ -38,3 +38,16 @@ You will need the following:<br>
 - install Django from version1.11<br>
 - Install other dependencies that might be required<br>
 - A code editor
+
+<h2>Contributions</h2>
+Contributions are welcome. It is recommended that you open an issue and discuss
+the changes you would like to make.
+
+<h2>Contact Information</h2>
+Esther Kirui<br>
+Mobile:+254775946131<br>
+Email:estherkc100@gmail.com<br>
+
+<h2>License and Copyright Information</h2>
+https://github.com/Eccie-K/photo-gallery/blob/master/LICENSE.md
+
