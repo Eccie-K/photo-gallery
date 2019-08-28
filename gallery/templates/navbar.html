@@ -15,12 +15,12 @@
      
     </div>
     <li class="nav-item">
-        <a href="/location.html" style="font-size: 17px" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
+        <a style="font-size: 17px" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">Locations
         </a>
         <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
           {% for location in locations %}
-          <a class="dropdown-item" href="{% url 'showLocation' location.id%}">{{location.name}}</a>
+          <a href="/location.html" class="dropdown-item" href="{% url 'showLocation' location.id%}">{{location.name}}</a>
           {% endfor %}
         </div>
       </li>
