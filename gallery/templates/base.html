@@ -1,0 +1,29 @@
+{% load bootstrap3 %}
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {% if title %}
+  <title>My Photo Gallery - {{title}}</title>
+  {% else %}
+    <title> My Photo Gallery </title>
+  {% endif %}
+  {% block styles %}
+  {% bootstrap_css %}
+  <link rel="stylesheet" href="{% static 'css/photos.css' %}">
+{% endblock %}
+</head>
+<body>
+    {% include "navbar.html" %}
+
+    {% block content %} <h1>Welcome to my photo gallery!</h1> {%endblock%}
+
+    {% block scripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{%static 'js/script.js'%}"></script>
+     {% bootstrap_javascript %}
+    {% endblock %}
+</body>
+</html>
