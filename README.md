@@ -35,7 +35,7 @@ To start using this project use the following commands:<br>
 You will need the following:<br>
 - Install Python version3.6 using pip<br>
 - Create a virtual environment<br> 
-- install Django from version1.11<br>
+- Install Django from version1.11<br>
 - Install other dependencies that might be required<br>
 - A code editor
 
