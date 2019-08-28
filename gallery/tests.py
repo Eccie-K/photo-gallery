@@ -5,14 +5,14 @@ from .models import Photo,Category
 class PhotoTestClass(TestCase):
      # Set up method
     def setUp(self):
-        self.Healthy= Photo(description = 'Healthy foods ...', image ='https://www.ocf.berkeley.edu/~sather/wp-content/uploads/2018/01/food--1200x600.jpg')
+        self.Cities= Photo(description = 'Beautiful Cities', image ='https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
 
     # Testing  instance
     def test_instance(self):
-        self.assertTrue(isinstance(self.Healthy,Photo))
+        self.assertTrue(isinstance(self.Cities,Photo))
 
      # Testing Save Method
     def test_save_method(self):
-        self.Healthy.save_photo()
+        self.Cities.save_photo()
         photos = Photo.objects.all()
         self.assertTrue(len(photos) > 0)
